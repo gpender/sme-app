@@ -1,0 +1,31 @@
+{
+  "name": "sme-app",
+  "version": "1.0.0",
+  "description": "A small business application",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "start-watch": "nodemon server/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "cd client && npm install"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3",
+    "nodemon": "^1.17.4"
+  },
+  "start": {
+    "postinstall": "cd server && npm install"
+  },
+  "devDependencies": {
+    "chromium": "^1.0.2",
+    "grunt": "^1.0.2",
+    "grunt-karma": "^2.0.0",
+    "jasmine-core": "^3.1.0",
+    "karma": "^2.0.2",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-jasmine": "^1.1.2",
+    "puppeteer": "^1.4.0"
+  }
+}
